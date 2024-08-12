@@ -1,35 +1,31 @@
 {
-    "name": "Optiker Bode GmbH & Co. KG",
-    "street": "Tibarg 41 ",
-    "zip": 22459,
-    "city": "Hamburg",
+    "name": "Fielmann AG",
+    "street": "Bahnhofstrasse 32",
+    "zip": 6300,
+    "city": "Zug",
     "customer": {
-        "name": "Mair Hörgeräte GmbH & Co . KG",
-        "street": "Saumweg 78",
-        "zip": 87600,
-        "city": "Kaufbeuren"
+        "name": "Joe Muster",
+        "street": "Anderstrasse 12",
+        "zip": 1234,
+        "city": "Imdorf"
     },
     "invoice": {
-        "date": "2023-07-11",
-        "invoice_number": 1210910798,
-        "position": [
+        "date": "19.12.21",
+        "invoice_number": 1255814564,
+        "positions": [
             {
-                "text": "10.0 STK Unterlegscheibe 2882",
-                "price": 6.4
+                "text": "Fielmann MC 501 CL SL",
+                "price": 19.9
             },
             {
-                "text": "1.0 STK Schutzhaube 563",
-                "price": 11.79
+                "text": "Feme Rechts +2.00 0.75 99",
+                "price": 5.0
             },
             {
-                "text": "1.0 STK Schutzhaube 563",
-                "price": 11.79
-            },
-            {
-                "text": "1.0 STK Schutzhaube 563",
-                "price": 11.79
+                "text": "Feme Links +2.00 -0.75 85",
+                "price": 5.0
             }
         ],
-        "total_price": 41.77
+        "total_price": 29.9
     }
 }
