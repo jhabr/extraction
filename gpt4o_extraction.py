@@ -69,7 +69,7 @@ def run():
             },
         ],
         tools=[openai.pydantic_function_tool(Optician)],
-        temperature=0,
+        temperature=0,  # highest reproducibility
     )
 
     # Print the structured output
