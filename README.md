@@ -7,4 +7,4 @@ OpenAI response time: 5.97 seconds
 ```
 
 **Source:**  
-- Function calling with Structured Data: https://platform.openai.com/docs/guides/function-calling/function-calling-with-structured-outputs
+- Function calling with Structured Outputs: https://platform.openai.com/docs/guides/function-calling/function-calling-with-structured-outputs
