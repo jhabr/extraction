@@ -1,0 +1,35 @@
+{
+    "name": "Optiker Bode GmbH & Co. KG",
+    "street": "Tibarg 41 ",
+    "zip": 22459,
+    "city": "Hamburg",
+    "customer": {
+        "name": "Mair Hörgeräte GmbH & Co . KG",
+        "street": "Saumweg 78",
+        "zip": 87600,
+        "city": "Kaufbeuren"
+    },
+    "invoice": {
+        "date": "2023-07-11",
+        "invoice_number": 1210910798,
+        "position": [
+            {
+                "text": "10.0 STK Unterlegscheibe 2882",
+                "price": 6.4
+            },
+            {
+                "text": "1.0 STK Schutzhaube 563",
+                "price": 11.79
+            },
+            {
+                "text": "1.0 STK Schutzhaube 563",
+                "price": 11.79
+            },
+            {
+                "text": "1.0 STK Schutzhaube 563",
+                "price": 11.79
+            }
+        ],
+        "total_price": 41.77
+    }
+}
