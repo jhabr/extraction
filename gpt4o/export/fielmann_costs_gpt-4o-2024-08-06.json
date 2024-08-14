@@ -4,5 +4,6 @@
     "total_tokens": 1102,
     "prompt_cost_$": 0.000237,
     "completion_cost_$": 0.000154,
-    "total_cost_$": 0.000391
+    "total_cost_$": 0.000391,
+    "completion_time_s": 4.09
 }

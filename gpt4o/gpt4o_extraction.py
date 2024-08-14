@@ -40,13 +40,25 @@ class Optician(BaseModel):
 def run():
     load_dotenv()
 
-    with open("./gpt4o/images/fielmann.jpg", "rb") as image_file:
+    document_name = "fielmann"
+    model = {
+        "name": "gpt-4o-2024-08-06",
+        "input_cost": 2.50 / 10e6,
+        "output_cost": 10 / 10e6,
+    }
+    # model = {
+    #     "name": "gpt-4o-mini-2024-07-18",
+    #     "input_cost": 0.150 / 10e6,
+    #     "output_cost": 0.600 / 10e6,
+    # }
+
+    with open(f"./gpt4o/images/{document_name}.jpg", "rb") as image_file:
         image_data = base64.b64encode(image_file.read()).decode('utf-8')
 
     start_time = time.time()
 
     response = OpenAI(api_key=os.getenv("OPEN_AI_API_KEY")).chat.completions.create(
-        model='gpt-4o-2024-08-06',
+        model=model["name"],
         messages=[
             {
                 "role": "system",
@@ -78,13 +90,13 @@ def run():
     # Print the structured output
     print(response.choices[0].message.tool_calls[0].function.arguments)
 
-    with open("./gpt4o/export/fielmann.json", "w") as json_file:
+    with open(f"./gpt4o/export/{document_name}_{model['name']}.json", "w") as json_file:
         json.dump(json.loads(response.choices[0].message.tool_calls[0].function.arguments), json_file, indent=4)
 
-    prompt_cost = 2.50 / 10e6 * response.usage.prompt_tokens
-    completion_cost = 10 / 10e6 * response.usage.completion_tokens
+    prompt_cost = model["input_cost"] * response.usage.prompt_tokens
+    completion_cost = model["output_cost"] * response.usage.completion_tokens
 
-    with open("./gpt4o/export/fielmann_costs.json", "w") as cost_json:
+    with open(f"./gpt4o/export/{document_name}_costs_{model['name']}.json", "w") as cost_json:
         json.dump({
             "prompt_tokens": response.usage.prompt_tokens,
             "completion_tokens": response.usage.completion_tokens,
@@ -92,6 +104,7 @@ def run():
             "prompt_cost_$": round(prompt_cost, 6),
             "completion_cost_$": round(completion_cost, 6),
             "total_cost_$": round(prompt_cost + completion_cost, 6),
+            "completion_time_s": round(time.time() - start_time, 2)
         }, cost_json, indent=4)
 
 
