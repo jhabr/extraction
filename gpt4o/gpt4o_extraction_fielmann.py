@@ -8,6 +8,8 @@ from dotenv import load_dotenv
 from openai import OpenAI
 from pydantic import BaseModel
 
+from gpt4o.constants import GPT4o_EXPORT_DIR, GPT4o_IMAGES_DIR
+
 
 class Customer(BaseModel):
     name: str
@@ -40,7 +42,7 @@ class Optician(BaseModel):
 def run():
     load_dotenv()
 
-    document_name = "fielmann"
+    document_name = "fielmann@200"
     model = {
         "name": "gpt-4o-2024-08-06",
         "input_cost": 2.50 / 10e6,
@@ -51,11 +53,12 @@ def run():
     #     "input_cost": 0.150 / 10e6,
     #     "output_cost": 0.600 / 10e6,
     # }
-
-    with open(f"./gpt4o/images/{document_name}.jpg", "rb") as image_file:
+    with open(os.path.join(GPT4o_IMAGES_DIR, f"{document_name}.jpg"), "rb") as image_file:
         image_data = base64.b64encode(image_file.read()).decode('utf-8')
 
     start_time = time.time()
+
+    print(f"Extracting {document_name} using {model['name']}...")
 
     response = OpenAI(api_key=os.getenv("OPEN_AI_API_KEY")).chat.completions.create(
         model=model["name"],
@@ -90,13 +93,13 @@ def run():
     # Print the structured output
     print(response.choices[0].message.tool_calls[0].function.arguments)
 
-    with open(f"./gpt4o/export/{document_name}_{model['name']}.json", "w") as json_file:
+    with open(os.path.join(GPT4o_EXPORT_DIR, f"{document_name}_{model['name']}.json"), "w") as json_file:
         json.dump(json.loads(response.choices[0].message.tool_calls[0].function.arguments), json_file, indent=4)
 
     prompt_cost = model["input_cost"] * response.usage.prompt_tokens
     completion_cost = model["output_cost"] * response.usage.completion_tokens
 
-    with open(f"./gpt4o/export/{document_name}_costs_{model['name']}.json", "w") as cost_json:
+    with open(os.path.join(GPT4o_EXPORT_DIR, f"{document_name}_costs_{model['name']}.json"), "w") as cost_json:
         json.dump({
             "prompt_tokens": response.usage.prompt_tokens,
             "completion_tokens": response.usage.completion_tokens,

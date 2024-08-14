@@ -1,6 +1,6 @@
 # gpt4o Extraction
 
-The extraction takes ~6 seconds with normal account with an image resolution of 595 x 842 pixels.
+The extraction takes ~6 seconds with normal account with an image resolution of 1652×2338 pixels.
 
 ```bash
 OpenAI response time: 5.97 seconds

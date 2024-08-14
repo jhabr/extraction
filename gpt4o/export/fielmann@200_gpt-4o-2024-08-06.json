@@ -1,0 +1,31 @@
+{
+    "name": "Fielmann AG",
+    "street": "Bahnhofstrasse 32",
+    "zip": 6300,
+    "city": "Zug",
+    "customer": {
+        "name": "Hans Muster",
+        "street": "Anderstrasse 12",
+        "zip": 1234,
+        "city": "Imdorf"
+    },
+    "invoice": {
+        "date": "19.12.21",
+        "invoice_number": 1255814564,
+        "positions": [
+            {
+                "text": "Fassung: Fielmann MC 501 CL SL Glas: Durchmess 65, Kunststoff",
+                "price": 19.9
+            },
+            {
+                "text": "Feme Rechts + 2.00 0.75 99",
+                "price": 5
+            },
+            {
+                "text": "Feme Links + 2.00 -0.75 85",
+                "price": 5
+            }
+        ],
+        "total_price": 29.9
+    }
+}
