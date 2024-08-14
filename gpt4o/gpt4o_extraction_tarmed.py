@@ -77,7 +77,8 @@ def run():
                     {
                         "type": "text",
                         "text": "Analyze this image and provide the details in the structured format defined by the "
-                                "Doctor model.",
+                                "Doctor model. Extract all positions in the provided image. Make sure extracted "
+                                "information is correct.",
                     },
                     {
                         "type": "image_url",

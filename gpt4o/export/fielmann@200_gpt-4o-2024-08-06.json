@@ -14,16 +14,16 @@
         "invoice_number": 1255814564,
         "positions": [
             {
-                "text": "Fassung: Fielmann MC 501 CL SL Glas: Durchmess 65, Kunststoff",
+                "text": "Fielmann MC 501 CL SL",
                 "price": 19.9
             },
             {
-                "text": "Feme Rechts + 2.00 0.75 99",
-                "price": 5
+                "text": "Feme Rechts",
+                "price": 5.0
             },
             {
-                "text": "Feme Links + 2.00 -0.75 85",
-                "price": 5
+                "text": "Feme Links",
+                "price": 5.0
             }
         ],
         "total_price": 29.9
