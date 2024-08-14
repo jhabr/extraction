@@ -1,0 +1,31 @@
+{
+    "name": "Fielmann AG",
+    "street": "Bahnhofstrasse 32",
+    "zip": 6300,
+    "city": "Zug",
+    "customer": {
+        "name": "Hans Muster",
+        "street": "Anderstrasse 12",
+        "zip": 1234,
+        "city": "Imdorf"
+    },
+    "invoice": {
+        "date": "19.12.21",
+        "invoice_number": 1255814564,
+        "positions": [
+            {
+                "text": "Fielmann MC 501 CL SL",
+                "price": 19.9
+            },
+            {
+                "text": "Feme Rechts: Sph +2.00, Cyl 0.75, Achse 99",
+                "price": 5
+            },
+            {
+                "text": "Feme Links: Sph +2.00, Cyl -0.75, Achse 85",
+                "price": 5
+            }
+        ],
+        "total_price": 29.9
+    }
+}
