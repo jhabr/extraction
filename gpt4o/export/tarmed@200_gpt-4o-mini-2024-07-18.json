@@ -1,0 +1,140 @@
+{
+    "name": "Dr. med. Patricia Arztin",
+    "street": "Arztgasse 17b",
+    "zip": 4000,
+    "city": "Basel",
+    "customer": {
+        "first_name": "Hans",
+        "last_name": "Muster",
+        "street": "Musterstrasse 5",
+        "zip": 7304,
+        "city": "Maienfeld"
+    },
+    "invoice": {
+        "date": "02.03.2019",
+        "invoice_number": 2009,
+        "positions": [
+            {
+                "tariff_number": "001",
+                "text": "Konsultation, erste M. (Grundkonsultation)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "002",
+                "text": "Konsultation, erste M. (Grundkonsultation)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "003",
+                "text": "Konsultation, erste M. (Grundkonsultation)",
+                "amount": 1,
+                "price": 5.21
+            },
+            {
+                "tariff_number": "004",
+                "text": "Konsultation, letzte 5 M. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "005",
+                "text": "Konsultation, letzte 5 M. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 5.21
+            },
+            {
+                "tariff_number": "006",
+                "text": "Konsultation, letzte 5 M. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "007",
+                "text": "Konsultation, letzte 5 M. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 5.21
+            },
+            {
+                "tariff_number": "008",
+                "text": "Konsultation, letzte 5 M. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "009",
+                "text": "Konsultation, letzte 5 M. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 5.21
+            },
+            {
+                "tariff_number": "010",
+                "text": "Konsultation, letzte 5 M. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "011",
+                "text": "Konsultation, letzte 5 M. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 5.21
+            },
+            {
+                "tariff_number": "012",
+                "text": "Arthroplastik Handgelenk mit Revascularisation eines Karpalknochens",
+                "amount": 1,
+                "price": 704.26
+            },
+            {
+                "tariff_number": "013",
+                "text": "Technische Grundleistung Praxis OP anerkant",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "014",
+                "text": "Konsultation, erste M. (Grundkonsultation)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "015",
+                "text": "Konsultation, erste M. (Grundkonsultation)",
+                "amount": 1,
+                "price": 5.21
+            },
+            {
+                "tariff_number": "016",
+                "text": "Konsultation, letzte 5 M. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "017",
+                "text": "Konsultation, letzte 5 M. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 5.21
+            },
+            {
+                "tariff_number": "018",
+                "text": "Konsultation, letzte 5 M. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "019",
+                "text": "Konsultation, letzte 5 M. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 5.21
+            },
+            {
+                "tariff_number": "020",
+                "text": "HIV-1 und HIV-2-Antik\u00f6rper und HIV-1-p24-Antigen, ql, Screening",
+                "amount": 1,
+                "price": 20.0
+            }
+        ],
+        "total_price": 1535.95
+    }
+}
