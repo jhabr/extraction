@@ -54,7 +54,7 @@ def run(model: Model, document_name: str):
         },
     }
 
-    general_agent = Agent(
+    extractor_agent = Agent(
         role="Information Extractor",
         goal="Extract relevant information from the supplied text into a json format.",
         backstory="You are an excellent information extractor that likes to extract information from given text into"
@@ -65,15 +65,19 @@ def run(model: Model, document_name: str):
         # tools=[tool],
     )
 
-    task = Task(
+    extraction_task = Task(
         description=f"Extract the relevant information defined in the expected output as json from the following "
         f"text: {fielmann_text}",
-        agent=general_agent,
+        agent=extractor_agent,
         expected_output=f"The extracted information with following structure: {schema}."
         f"Make sure that each property has a value.",
     )
 
-    crew = Crew(agents=[general_agent], tasks=[task], verbose=True)
+    crew = Crew(
+        agents=[extractor_agent],
+        tasks=[extraction_task],
+        verbose=True,
+    )
 
     result = crew.kickoff()
 
