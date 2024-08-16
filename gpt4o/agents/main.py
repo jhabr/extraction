@@ -4,28 +4,26 @@ import time
 
 from dotenv import load_dotenv
 
-from gpt4o.helpers.models import GPT4o, GPT4
+from gpt4o.helpers.models import GPT4o, Model
 
 load_dotenv()
 
 import openai
 from openai import OpenAI
 
-from gpt4o.constants import GPT4o_IMAGES_DIR
+from gpt4o.constants import IMAGES_DIR
 from gpt4o.helpers.export_helper import ExportHelper
 from gpt4o.schemas.schemas import Tarmed
 
 
 def run(
     document_name: str,
-    model: GPT4,
+    model: Model,
     reviews: int = 1,
 ):
     responses = []
 
-    with open(
-        os.path.join(GPT4o_IMAGES_DIR, f"{document_name}.jpg"), "rb"
-    ) as image_file:
+    with open(os.path.join(IMAGES_DIR, f"{document_name}.jpg"), "rb") as image_file:
         image_data = base64.b64encode(image_file.read()).decode("utf-8")
 
     start_time = time.time()

@@ -5,7 +5,7 @@ from typing import Optional
 from openai.types.chat import ChatCompletion
 
 from gpt4o.constants import GPT4o_EXPORT_DIR
-from gpt4o.helpers.models import GPT4
+from gpt4o.helpers.models import Model
 
 
 class ExportHelper:
@@ -13,13 +13,14 @@ class ExportHelper:
     def export_json_output(
         self,
         document_name: str,
-        model: GPT4,
+        model: Model,
         output: str,
+        export_dir: str = GPT4o_EXPORT_DIR,
         prefix: Optional[str] = None,
     ) -> None:
         with open(
             os.path.join(
-                GPT4o_EXPORT_DIR,
+                export_dir,
                 (
                     f"{prefix}_{document_name}_{model.name}.json"
                     if prefix
@@ -36,7 +37,7 @@ class ExportHelper:
 
     def export_cost(
         self,
-        model: GPT4,
+        model: Model,
         document_name: str,
         responses: [ChatCompletion],
         prefix: Optional[str] = None,

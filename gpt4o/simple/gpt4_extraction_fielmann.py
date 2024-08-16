@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 from openai import OpenAI
 from pydantic import BaseModel, Field
 
-from gpt4o.constants import GPT4o_EXPORT_DIR, GPT4o_IMAGES_DIR
+from gpt4o.constants import GPT4o_EXPORT_DIR, IMAGES_DIR
 
 
 class Customer(BaseModel):

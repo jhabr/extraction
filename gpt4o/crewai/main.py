@@ -4,7 +4,7 @@ import os
 from crewai import Crew, Task, Process
 from dotenv import load_dotenv
 
-from gpt4o.constants import GPT4o_IMAGES_DIR
+from gpt4o.constants import IMAGES_DIR
 
 load_dotenv()
 
@@ -15,7 +15,7 @@ from gpt4o.crewai.tools import ExtractionTool, ReviewTool
 def run():
     load_dotenv()
 
-    with open(os.path.join(GPT4o_IMAGES_DIR, "fielmann@200.jpg"), "rb") as image_file:
+    with open(os.path.join(IMAGES_DIR, "fielmann@200.jpg"), "rb") as image_file:
         image_data = base64.b64encode(image_file.read()).decode("utf-8")
 
     extractor_agent = ExtractorAgent()

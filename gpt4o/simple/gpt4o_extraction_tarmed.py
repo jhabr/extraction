@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 from openai import OpenAI
 from pydantic import BaseModel, Field
 
-from gpt4o.constants import GPT4o_IMAGES_DIR, GPT4o_EXPORT_DIR
+from gpt4o.constants import IMAGES_DIR, GPT4o_EXPORT_DIR
 
 
 class Customer(BaseModel):
@@ -65,9 +65,7 @@ def run():
     #     "output_cost": 0.600 / 10e6,
     # }
 
-    with open(
-        os.path.join(GPT4o_IMAGES_DIR, f"{document_name}.jpg"), "rb"
-    ) as image_file:
+    with open(os.path.join(IMAGES_DIR, f"{document_name}.jpg"), "rb") as image_file:
         image_data = base64.b64encode(image_file.read()).decode("utf-8")
 
     start_time = time.time()
