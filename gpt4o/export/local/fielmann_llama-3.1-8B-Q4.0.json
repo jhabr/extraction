@@ -1,0 +1,68 @@
+{
+    "customer": {
+        "title": "Herr",
+        "first_name": "Hans",
+        "last_name": "Muster",
+        "address": {
+            "street": "Anderstrasse 12",
+            "city": "Imdorf",
+            "zip_code": "1234"
+        },
+        "invoice": {
+            "number": "12558 14564"
+        }
+    },
+    "supplier": {
+        "name": "Fielmann AG",
+        "address": {
+            "street": "Bahnhofstrasse 32",
+            "city": "Zug",
+            "zip_code": "6300"
+        }
+    },
+    "order": {
+        "product": {
+            "name": "Fielmann MC 501 CL SL Durchmess 65, Kunststoff",
+            "price": {
+                "gross": "29.90 CHF",
+                "net": "27.75 CHF"
+            }
+        },
+        "quantity": [
+            {
+                "type": "Sph",
+                "amount": "+2.00 +2.00"
+            },
+            {
+                "type": "Cyl Achse 0.75 99 -0.75 85",
+                "amount": null
+            },
+            {
+                "type": "Prisma",
+                "amount": null
+            },
+            {
+                "type": "Basis",
+                "amount": null
+            },
+            {
+                "type": "Add",
+                "amount": null
+            }
+        ],
+        "total_price": {
+            "gross": "29.90 CHF",
+            "net": "27.75 CHF"
+        },
+        "tax_rate": "7.7%",
+        "vat_amount": "2.15 CHF"
+    },
+    "delivery_info": {
+        "date": "den 19.12.21",
+        "address": {
+            "city": "Zug"
+        }
+    },
+    "invoice_date": "vom 12.12.2021",
+    "NIF": "49585"
+}
