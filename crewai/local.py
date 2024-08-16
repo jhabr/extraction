@@ -7,14 +7,14 @@ from llama_index.core.tools import FunctionTool
 
 from constants import LOCAL_EXPORT_DIR
 from helpers.export_helper import ExportHelper
-from helpers.models import LLAMA3_1
+from helpers.models import Llama3_1, Model, MoonDream
 from schemas.optician import Invoice
 
 os.environ["OPENAI_API_KEY"] = "NA"
 
 
-def run():
-    llm = ChatOllama(model="llama3.1", base_url="http://localhost:11434")
+def run(model: Model):
+    llm = ChatOllama(model=model.name, base_url="http://localhost:11434")
 
     fielmann_text = """
             Fielmann AG, Bahnhofstrasse 32 6300 Zug
@@ -89,7 +89,8 @@ def run():
         description=f"Extract the relevant information defined in the expected output as json from the following "
         f"text: {fielmann_text}",
         agent=general_agent,
-        expected_output=f"The extracted information in json format. Use the following structure: {schema}",
+        expected_output=f"The extracted information with following structure: {schema}."
+        f"Make sure that each property has a value.",
     )
 
     crew = Crew(agents=[general_agent], tasks=[task], verbose=True)
@@ -101,10 +102,10 @@ def run():
     ExportHelper().export_json_output(
         export_dir=LOCAL_EXPORT_DIR,
         document_name="fielmann",
-        model=LLAMA3_1(),
+        model=model,
         output=result.tasks_output[0].raw,
     )
 
 
 if __name__ == "__main__":
-    run()
+    run(model=Llama3_1())

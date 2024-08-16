@@ -11,40 +11,34 @@
         "city": "Imdorf"
     },
     "invoice": {
-        "date": "den 19.12.21 Ihr Auftrag 12558 14564 vom 12.12.2021",
+        "date": "19.12.21",
         "invoice_number": "12558 14564",
         "positions": [
+            {
+                "text": "Glas: Feme Rechts Feme Links"
+            },
             {
                 "text": "Fielmann MC 501 CL SL Durchmess 65, Kunststoff",
                 "price": 19.9
             },
             {
-                "text": "5.00 5.00",
-                "price": 29.9
-            },
-            {
-                "text": "+ 2.00 + 2.00",
-                "price": 29.9
-            },
-            {
-                "text": "Sph",
-                "price": null
+                "text": "Sph + 2.00 + 2.00"
             },
             {
                 "text": "Cyl Achse 0.75 99 -0.75 85",
-                "price": null
+                "price": 29.9
             },
             {
                 "text": "Prisma",
-                "price": null
+                "price": 5.0
             },
             {
                 "text": "Basis",
-                "price": null
+                "price": 5.0
             },
             {
                 "text": "Add",
-                "price": null
+                "price": 29.9
             }
         ],
         "total_price": 27.75

@@ -22,7 +22,13 @@ class GPT4Turbo(Model):
     output_cost = 30.00 / 10e6
 
 
-class LLAMA3_1(Model):
-    name = "llama-3.1-8B-Q4.0"
+class Llama3_1(Model):
+    name = "llama3.1"
+    input_cost = 0.0
+    output_cost = 0.0
+
+
+class MoonDream(Model):
+    name = "moondream"
     input_cost = 0.0
     output_cost = 0.0
