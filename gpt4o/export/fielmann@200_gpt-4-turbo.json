@@ -4,27 +4,26 @@
     "zip": 6300,
     "city": "Zug",
     "customer": {
-        "first_name": "Hans",
-        "last_name": "Muster",
+        "name": "Hans Muster",
         "street": "Anderstrasse 12",
         "zip": 1234,
         "city": "Imdorf"
     },
     "invoice": {
-        "date": "19.12.21",
-        "invoice_number": 1255814564,
+        "date": "2021-12-19",
+        "invoice_number": 14564,
         "positions": [
             {
-                "text": "Fielmann MC 501 CL SL",
+                "text": "Fielmann MC 501 CL SL Durchmess 65, Kunststoff",
                 "price": 19.9
             },
             {
                 "text": "Feme Rechts",
-                "price": 5.0
+                "price": 5
             },
             {
                 "text": "Feme Links",
-                "price": 5.0
+                "price": 5
             }
         ],
         "total_price": 29.9

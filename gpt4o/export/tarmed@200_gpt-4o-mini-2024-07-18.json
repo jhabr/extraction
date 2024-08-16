@@ -1,8 +1,8 @@
 {
-    "name": "Dr. med. Patricia Arztin",
-    "street": "Arztgasse 17b",
-    "zip": 4000,
-    "city": "Basel",
+    "name": "H11111",
+    "street": "Billerweg 128 - 4414 Erlenkendorf",
+    "zip": 7304,
+    "city": "Maienfeld",
     "customer": {
         "first_name": "Hans",
         "last_name": "Muster",
@@ -11,128 +11,1208 @@
         "city": "Maienfeld"
     },
     "invoice": {
-        "date": "02.03.2019",
-        "invoice_number": 2009,
+        "date": "03.03.2019",
+        "invoice_number": 1551791331,
         "positions": [
             {
                 "tariff_number": "001",
-                "text": "Konsultation, erste M. (Grundkonsultation)",
+                "text": "Konsultation, erste Mi. (Grundkonsultation)",
                 "amount": 1,
                 "price": 10.42
             },
             {
                 "tariff_number": "002",
-                "text": "Konsultation, erste M. (Grundkonsultation)",
+                "text": "Konsultation, erste Mi. (Grundkonsultation)",
                 "amount": 1,
                 "price": 10.42
             },
             {
                 "tariff_number": "003",
-                "text": "Konsultation, erste M. (Grundkonsultation)",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
                 "amount": 1,
-                "price": 5.21
+                "price": 10.42
             },
             {
                 "tariff_number": "004",
-                "text": "Konsultation, letzte 5 M. (Konsultationsuntersuch)",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
                 "amount": 1,
                 "price": 10.42
             },
             {
                 "tariff_number": "005",
-                "text": "Konsultation, letzte 5 M. (Konsultationsuntersuch)",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
                 "amount": 1,
-                "price": 5.21
+                "price": 10.42
             },
             {
                 "tariff_number": "006",
-                "text": "Konsultation, letzte 5 M. (Konsultationsuntersuch)",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
                 "amount": 1,
                 "price": 10.42
             },
             {
                 "tariff_number": "007",
-                "text": "Konsultation, letzte 5 M. (Konsultationsuntersuch)",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
                 "amount": 1,
-                "price": 5.21
+                "price": 10.42
             },
             {
                 "tariff_number": "008",
-                "text": "Konsultation, letzte 5 M. (Konsultationsuntersuch)",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
                 "amount": 1,
                 "price": 10.42
             },
             {
                 "tariff_number": "009",
-                "text": "Konsultation, letzte 5 M. (Konsultationsuntersuch)",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
                 "amount": 1,
-                "price": 5.21
+                "price": 10.42
             },
             {
                 "tariff_number": "010",
-                "text": "Konsultation, letzte 5 M. (Konsultationsuntersuch)",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
                 "amount": 1,
                 "price": 10.42
             },
             {
                 "tariff_number": "011",
-                "text": "Konsultation, letzte 5 M. (Konsultationsuntersuch)",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
                 "amount": 1,
-                "price": 5.21
+                "price": 10.42
             },
             {
                 "tariff_number": "012",
-                "text": "Arthroplastik Handgelenk mit Revascularisation eines Karpalknochens",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
                 "amount": 1,
-                "price": 704.26
+                "price": 10.42
             },
             {
                 "tariff_number": "013",
-                "text": "Technische Grundleistung Praxis OP anerkant",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
                 "amount": 1,
                 "price": 10.42
             },
             {
                 "tariff_number": "014",
-                "text": "Konsultation, erste M. (Grundkonsultation)",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
                 "amount": 1,
                 "price": 10.42
             },
             {
                 "tariff_number": "015",
-                "text": "Konsultation, erste M. (Grundkonsultation)",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
                 "amount": 1,
-                "price": 5.21
+                "price": 10.42
             },
             {
                 "tariff_number": "016",
-                "text": "Konsultation, letzte 5 M. (Konsultationsuntersuch)",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
                 "amount": 1,
                 "price": 10.42
             },
             {
                 "tariff_number": "017",
-                "text": "Konsultation, letzte 5 M. (Konsultationsuntersuch)",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
                 "amount": 1,
-                "price": 5.21
+                "price": 10.42
             },
             {
                 "tariff_number": "018",
-                "text": "Konsultation, letzte 5 M. (Konsultationsuntersuch)",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
                 "amount": 1,
                 "price": 10.42
             },
             {
                 "tariff_number": "019",
-                "text": "Konsultation, letzte 5 M. (Konsultationsuntersuch)",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
                 "amount": 1,
-                "price": 5.21
+                "price": 10.42
             },
             {
                 "tariff_number": "020",
-                "text": "HIV-1 und HIV-2-Antik\u00f6rper und HIV-1-p24-Antigen, ql, Screening",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
                 "amount": 1,
-                "price": 20.0
+                "price": 10.42
+            },
+            {
+                "tariff_number": "021",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "022",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "023",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "024",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "025",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "026",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "027",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "028",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "029",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "030",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "031",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "032",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "033",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "034",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "035",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "036",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "037",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "038",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "039",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "040",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "041",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "042",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "043",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "044",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "045",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "046",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "047",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "048",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "049",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "050",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "051",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "052",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "053",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "054",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "055",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "056",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "057",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "058",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "059",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "060",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "061",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "062",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "063",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "064",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "065",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "066",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "067",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "068",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "069",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "070",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "071",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "072",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "073",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "074",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "075",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "076",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "077",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "078",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "079",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "080",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "081",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "082",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "083",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "084",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "085",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "086",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "087",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "088",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "089",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "090",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "091",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "092",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "093",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "094",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "095",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "096",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "097",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "098",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "099",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "100",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "101",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "102",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "103",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "104",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "105",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "106",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "107",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "108",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "109",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "110",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "111",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "112",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "113",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "114",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "115",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "116",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "117",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "118",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "119",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "120",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "121",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "122",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "123",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "124",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "125",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "126",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "127",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "128",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "129",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "130",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "131",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "132",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "133",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "134",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "135",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "136",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "137",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "138",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "139",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "140",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "141",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "142",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "143",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "144",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "145",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "146",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "147",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "148",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "149",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "150",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "151",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "152",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "153",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "154",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "155",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "156",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "157",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "158",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "159",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "160",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "161",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "162",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "163",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "164",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "165",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "166",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "167",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "168",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "169",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "170",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "171",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "172",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "173",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "174",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "175",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "176",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "177",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "178",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "179",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "180",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "181",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "182",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "183",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "184",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "185",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "186",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "187",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "188",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "189",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "190",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "191",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "192",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "193",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "194",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "195",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "196",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "197",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "198",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "199",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
+            },
+            {
+                "tariff_number": "200",
+                "text": "Konsultation, letzte 5 Mi. (Konsultationsuntersuch)",
+                "amount": 1,
+                "price": 10.42
             }
         ],
         "total_price": 1535.95
