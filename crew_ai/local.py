@@ -16,7 +16,11 @@ os.environ["OPENAI_API_KEY"] = "NA"
 
 
 def run(model: Model, document_name: str):
-    llm = ChatOllama(model=model.name, base_url="http://localhost:11434")
+    llm = ChatOllama(
+        model=model.name,
+        temperature=0.0,
+        base_url="http://localhost:11434",
+    )
 
     with pdfplumber.open(os.path.join(PDF_DIR, document_name)) as pdf:
         fielmann_text = pdf.pages[0].extract_text(layout=True)
@@ -70,12 +74,30 @@ def run(model: Model, document_name: str):
         f"text: {fielmann_text}",
         agent=extractor_agent,
         expected_output=f"The extracted information with following structure: {schema}."
-        f"Make sure that each property has a value.",
+        f"Make sure that each property has a valid value.",
+    )
+
+    reviewer_agent = Agent(
+        role="Information Reviewer",
+        goal="Review the extracted information from the supplied text and make sure it matches the supplied json "
+        "format. If you find any mistakes, correct them.",
+        backstory="You are an excellent information reviewer that likes to review extracted information from a given "
+        "text into and makes sure it matches a structured format like json and ist a 100% correct.",
+        allow_delegation=False,
+        verbose=True,
+        llm=llm,
+    )
+
+    review_task = Task(
+        description=f"Review the extracted information and make sure the format is correct.",
+        agent=reviewer_agent,
+        expected_output=f"The extracted information with following structure: {schema}."
+        f"Make sure that each property has a valid value.",
     )
 
     crew = Crew(
-        agents=[extractor_agent],
-        tasks=[extraction_task],
+        agents=[extractor_agent, reviewer_agent],
+        tasks=[extraction_task, review_task],
         verbose=True,
     )
 
