@@ -63,10 +63,12 @@ def run(model: Model):
     )
 
     schema = {
-        "name": str,
-        "street": str,
-        "zip": int,
-        "city": str,
+        "service_provider": {
+            "name": str,
+            "street": str,
+            "zip": int,
+            "city": str,
+        },
         "customer": {
             "first_name": str,
             "last_name": str,
