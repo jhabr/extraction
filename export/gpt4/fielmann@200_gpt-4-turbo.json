@@ -1,18 +1,21 @@
 {
-    "name": "Fielmann AG",
-    "street": "Bahnhofstrasse 32",
-    "zip": 6300,
-    "city": "Zug",
+    "service_provider": {
+        "name": "Fielmann AG",
+        "street": "Bahnhofstrasse 32",
+        "zip": 6300,
+        "city": "Zug"
+    },
     "customer": {
         "first_name": "Hans",
         "last_name": "Muster",
+        "birthday": "",
         "street": "Anderstrasse 12",
         "zip": 1234,
         "city": "Imdorf"
     },
     "invoice": {
         "date": "2021-12-19",
-        "invoice_number": 14564,
+        "invoice_number": 1255814564,
         "positions": [
             {
                 "text": "Fielmann MC 501 CL SL Durchmess 65, Kunststoff",

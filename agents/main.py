@@ -4,16 +4,16 @@ import time
 
 from dotenv import load_dotenv
 
-from gpt4o.helpers.models import GPT4o, Model
+from helpers.models import GPT4o, Model
 
 load_dotenv()
 
 import openai
 from openai import OpenAI
 
-from gpt4o.constants import IMAGES_DIR
-from gpt4o.helpers.export_helper import ExportHelper
-from gpt4o.schemas.schemas import Tarmed
+from constants import IMAGES_DIR
+from helpers.export_helper import ExportHelper
+from schemas.schemas import Tarmed
 
 
 def run(

@@ -4,7 +4,7 @@ import openai
 from crewai_tools import BaseTool
 from openai import OpenAI
 
-from gpt4o.schemas.schemas import Tarmed
+from schemas.schemas import Tarmed
 
 
 class ExtractionTool(BaseTool):

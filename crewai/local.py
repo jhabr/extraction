@@ -2,9 +2,9 @@ from crewai import Agent, Task, Crew
 from langchain_ollama import ChatOllama
 import os
 
-from gpt4o.constants import LOCAL_EXPORT_DIR
-from gpt4o.helpers.export_helper import ExportHelper
-from gpt4o.helpers.models import LLAMA3_1
+from constants import LOCAL_EXPORT_DIR
+from helpers.export_helper import ExportHelper
+from helpers.models import LLAMA3_1
 
 os.environ["OPENAI_API_KEY"] = "NA"
 

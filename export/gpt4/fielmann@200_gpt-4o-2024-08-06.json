@@ -1,11 +1,14 @@
 {
-    "name": "Fielmann AG",
-    "street": "Bahnhofstrasse 32",
-    "zip": 6300,
-    "city": "Zug",
+    "service_provider": {
+        "name": "Fielmann AG",
+        "street": "Bahnhofstrasse 32",
+        "zip": 6300,
+        "city": "Zug"
+    },
     "customer": {
         "first_name": "Hans",
         "last_name": "Muster",
+        "birthday": "",
         "street": "Anderstrasse 12",
         "zip": 1234,
         "city": "Imdorf"

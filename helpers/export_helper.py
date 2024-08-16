@@ -4,8 +4,8 @@ from typing import Optional
 
 from openai.types.chat import ChatCompletion
 
-from gpt4o.constants import GPT4o_EXPORT_DIR
-from gpt4o.helpers.models import Model
+from constants import GPT4o_EXPORT_DIR
+from helpers.models import Model
 
 
 class ExportHelper:

@@ -1,6 +1,6 @@
 import crewai
 
-from gpt4o.crewai.agents import ExtractorAgent, ReviewerAgent
+from crewai.agents import ExtractorAgent, ReviewerAgent
 
 
 class ExtractionReviewWorkflow(crewai.Workflow):

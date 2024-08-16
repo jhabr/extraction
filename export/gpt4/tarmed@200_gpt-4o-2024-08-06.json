@@ -1,0 +1,51 @@
+{
+    "service_provider": {
+        "name": "Biller AG",
+        "street": "Billerweg 128",
+        "zip": 4414,
+        "city": "Frenkendorf"
+    },
+    "customer": {
+        "first_name": "Hans",
+        "last_name": "Muster",
+        "birthday": "02.08.1984",
+        "street": "Musterstrasse 5",
+        "zip": 7304,
+        "city": "Maienfeld"
+    },
+    "invoice": {
+        "date": "02.03.2019",
+        "invoice_number": 2009001001,
+        "positions": [
+            {
+                "text": "Konsultation, erste 5 Min. (Grundkonsultation)",
+                "price": 16.56
+            },
+            {
+                "text": "Konsultation bei Personen \u00fcber 6 Jahren und unter 75 Jahren, jede weiteren 5 Min. (Konsultationszuschlag)",
+                "price": 8.29
+            },
+            {
+                "text": "Arthroplastik Handgelenk mittels Revascularisation eines Karpalknochens",
+                "price": 1258.8
+            },
+            {
+                "text": "Technische Grundleistung Praxis - OP anerkannt",
+                "price": 16.56
+            },
+            {
+                "text": "Sitzungspauschale f\u00fcr Lito- und Thermotherapie/Instruktion bei Ger\u00e4tevermietung",
+                "price": 2.5
+            },
+            {
+                "text": "Alanin-Aminotransferase (ALAT)",
+                "price": 20.0
+            },
+            {
+                "text": "HIV-1- und HIV-2-Antik\u00f6rper und HIV-1-p24-Antigen, ql, Screening",
+                "price": 20.0
+            }
+        ],
+        "total_price": 1535.95
+    }
+}
