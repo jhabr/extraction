@@ -4,7 +4,8 @@
     "zip": 6300,
     "city": "Zug",
     "customer": {
-        "name": "Hans Muster",
+        "first_name": "Hans",
+        "last_name": "Muster",
         "street": "Anderstrasse 12",
         "zip": 1234,
         "city": "Imdorf"

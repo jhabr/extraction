@@ -27,8 +27,8 @@
                 "price": 0
             },
             {
-                "tariff_number": "00.0020",
-                "text": "Konsultation bei Personen \u00fcber 6 Jahren und unter 75 Jahren, jede weitere 5 Min. (Konsultationszuschlag)",
+                "tariff_number": "00.0030",
+                "text": "Konsultation Personen \u00fcber 6 Jahren und unter 75 Jahren, jede weiteren 5 Min. (Konsultationszuschlag)",
                 "amount": 1,
                 "price": 8.29
             },
@@ -40,19 +40,19 @@
             },
             {
                 "tariff_number": "00.0010",
-                "text": "Technische Grundleistung Praxis -OP anerkannt",
-                "amount": 1,
-                "price": 0
-            },
-            {
-                "tariff_number": "00.0010",
-                "text": "Konsultation, erste 5 Min. (Grundkonsultation)",
+                "text": "Technische Grundleistung Praxis OP anerkannt",
                 "amount": 1,
                 "price": 16.56
             },
             {
                 "tariff_number": "00.0020",
-                "text": "Konsultation bei Personen \u00fcber 6 Jahren und unter 75 Jahren, jede weitere 5 Min. (Konsultationszuschlag)",
+                "text": "Konsultation, erste 5 Min. (Grundkonsultation)",
+                "amount": 1,
+                "price": 16.56
+            },
+            {
+                "tariff_number": "00.0030",
+                "text": "Konsultation Personen \u00fcber 6 Jahren und unter 75 Jahren, jede weiteren 5 Min. (Konsultationszuschlag)",
                 "amount": 1,
                 "price": 8.29
             },
@@ -60,17 +60,17 @@
                 "tariff_number": "00.0010",
                 "text": "Konsultation, letzte 5 Min(Konsultationszuschlag)",
                 "amount": 1,
-                "price": 8.29
-            },
-            {
-                "tariff_number": "00.0010",
-                "text": "Konsultation, erste 5 Min. (Grundkonsultation)",
-                "amount": 1,
                 "price": 16.56
             },
             {
                 "tariff_number": "00.0020",
-                "text": "Konsultation bei Personen \u00fcber 6 Jahren und unter 75 Jahren, jede weitere 5 Min. (Konsultationszuschlag)",
+                "text": "Konsultation, erste 5 Min(Grundkonsultation)",
+                "amount": 1,
+                "price": 16.56
+            },
+            {
+                "tariff_number": "00.0030",
+                "text": "Konsultation Personen \u00fcber 6 Jahren und unter 75 Jahren, jede weiteren 5 Min. (Konsultationszuschlag)",
                 "amount": 1,
                 "price": 8.29
             },
@@ -78,29 +78,23 @@
                 "tariff_number": "00.0010",
                 "text": "Konsultation, letzte 5 Min(Konsultationszuschlag)",
                 "amount": 1,
-                "price": 8.29
-            },
-            {
-                "tariff_number": "00.0010",
-                "text": "Konsultation, erste 5 Min. (Grundkonsultation)",
-                "amount": 1,
                 "price": 16.56
             },
             {
                 "tariff_number": "00.0020",
-                "text": "Konsultation bei Personen \u00fcber 6 Jahren und unter 75 Jahren, jede weitere 5 Min. (Konsultationszuschlag)",
+                "text": "Konsultation, erste 5 Min(Grundkonsultation)",
                 "amount": 1,
-                "price": 8.29
+                "price": 16.56
             },
             {
-                "tariff_number": "00.0010",
-                "text": "Konsultation, letzte 5 Min(Konsultationszuschlag)",
+                "tariff_number": "00.0030",
+                "text": "Konsultation Personen \u00fcber 6 Jahren und unter 75 Jahren, jede weiteren 5 Min. (Konsultationszuschlag)",
                 "amount": 1,
                 "price": 8.29
             },
             {
                 "tariff_number": "7320",
-                "text": "Sitzungszuschlag f\u00fcr Elektro- und Thermotherapie/Instruktion bei Ger\u00e4tevermietung",
+                "text": "Sitzungspauschale f\u00fcr Lektro- und Thermotherapie/Instruktion bei Ger\u00e4tevermietung",
                 "amount": 1,
                 "price": 2.5
             },
@@ -111,8 +105,8 @@
                 "price": 20
             },
             {
-                "tariff_number": "3094",
-                "text": "HIV-1 und HIV-2 Antik\u00f6rper und HIV1-p24-Antigen, ql, Screening",
+                "tariff_number": "3190",
+                "text": "HIV-1 und HIV-2 Antik\u00f6rper und HIV-1 p24-Antigen, ql, Screening",
                 "amount": 1,
                 "price": 20
             }
