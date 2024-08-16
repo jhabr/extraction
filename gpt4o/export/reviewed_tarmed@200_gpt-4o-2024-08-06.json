@@ -1,0 +1,111 @@
+{
+    "name": "Frau Dr. med. Patricia \u00c4rztin",
+    "street": "Arztgasse 17b",
+    "zip": 4000,
+    "city": "Basel",
+    "customer": {
+        "first_name": "Hans",
+        "last_name": "Muster",
+        "birthday": "02.08.1984",
+        "street": "Musterstrasse 5",
+        "zip": 7304,
+        "city": "Maienfeld"
+    },
+    "invoice": {
+        "date": "07.03.2019",
+        "identification": 1551971331,
+        "positions": [
+            {
+                "tariff_number": "00.0010",
+                "text": "Konsultation, erste 5 Min. (Grundkonsultation)",
+                "amount": 1,
+                "price": 16.56
+            },
+            {
+                "tariff_number": "00.0020",
+                "text": "An optional comment line per service record, that might be longer than 1 line",
+                "amount": 1,
+                "price": 0
+            },
+            {
+                "tariff_number": "00.0010",
+                "text": "Konsultation Personen \u00fcber 6 Jahren und unter 75 Jahren, jede weiteren 5 Min. (Konsultationszuschlag)",
+                "amount": 1,
+                "price": 8.29
+            },
+            {
+                "tariff_number": "24.2660",
+                "text": "Arthroplastik Handgelenk mittels Revascularisation eines Karpalknochens",
+                "amount": 1,
+                "price": 1258.8
+            },
+            {
+                "tariff_number": "00.0010",
+                "text": "Technische Grundleistung Praxis - OP anerkannt",
+                "amount": 1,
+                "price": 16.56
+            },
+            {
+                "tariff_number": "00.0010",
+                "text": "Konsultation, erste 5 Min. (Grundkonsultation)",
+                "amount": 1,
+                "price": 16.56
+            },
+            {
+                "tariff_number": "00.0010",
+                "text": "Konsultation Personen \u00fcber 6 Jahren und unter 75 Jahren, jede weiteren 5 Min. (Konsultationszuschlag)",
+                "amount": 1,
+                "price": 8.29
+            },
+            {
+                "tariff_number": "00.0010",
+                "text": "Konsultation, letzte 5 Min(Konsultationszuschlag)",
+                "amount": 1,
+                "price": 16.56
+            },
+            {
+                "tariff_number": "00.0010",
+                "text": "Konsultation, erste 5 Min. (Grundkonsultation)",
+                "amount": 1,
+                "price": 16.56
+            },
+            {
+                "tariff_number": "00.0010",
+                "text": "Konsultation Personen \u00fcber 6 Jahren und unter 75 Jahren, jede weiteren 5 Min. (Konsultationszuschlag)",
+                "amount": 1,
+                "price": 8.29
+            },
+            {
+                "tariff_number": "00.0010",
+                "text": "Konsultation, letzte 5 Min(Konsultationszuschlag)",
+                "amount": 1,
+                "price": 16.56
+            },
+            {
+                "tariff_number": "00.0010",
+                "text": "Konsultation, erste 5 Min. (Grundkonsultation)",
+                "amount": 1,
+                "price": 16.56
+            },
+            {
+                "tariff_number": "00.0010",
+                "text": "Konsultation Personen \u00fcber 6 Jahren und unter 75 Jahren, jede weiteren 5 Min. (Konsultationszuschlag)",
+                "amount": 1,
+                "price": 8.29
+            },
+            {
+                "tariff_number": "7320",
+                "text": "Sitzungspauschale f\u00fcr Litze- und Thermotherapie/Instruktion bei Ger\u00e4tevermietung",
+                "amount": 1,
+                "price": 20
+            },
+            {
+                "tariff_number": "3094",
+                "text": "Alanin-Aminotransferase (ALAT)",
+                "amount": 1,
+                "price": 20
+            }
+        ],
+        "total_price": 1535.95
+    }
+}
