@@ -20,15 +20,21 @@ class Customer(BaseModel):
 
 
 class Position(BaseModel):
-    text: str = Field(description="the textual description of the position in the invoice")
+    text: str = Field(
+        description="the textual description of the position in the invoice"
+    )
     price: float = Field(description="the price of the position in the invoice")
 
 
 class Invoice(BaseModel):
     date: str = Field(description="the date of the invoice")
     invoice_number: int = Field(description="the identification number of the invoice")
-    positions: list[Position] = Field(description="all the positions with text and amount in the invoice")
-    total_price: float = Field(description="the total price of the invoice - sum of all listed positions")
+    positions: list[Position] = Field(
+        description="all the positions with text and amount in the invoice"
+    )
+    total_price: float = Field(
+        description="the total price of the invoice - sum of all listed positions"
+    )
 
 
 class Optician(BaseModel):
@@ -86,22 +92,23 @@ def run():
 
     print(f"Extracting {document_name} using {model['name']}...")
 
-    response = OpenAI(api_key=os.getenv("OPEN_AI_API_KEY")).chat.completions.create(
+    response = OpenAI(api_key=os.getenv("OPENAI_API_KEY")).chat.completions.create(
         model=model["name"],
         messages=[
             {
                 "role": "system",
                 "content": "You are an assistant that extracts structured information from images."
-                           "Use the supplied tools to assist the user."},
+                "Use the supplied tools to assist the user.",
+            },
             {
                 "role": "user",
                 "content": [
                     {
                         "type": "text",
                         "text": "Analyze and return the details in the structured format defined "
-                                f"by the Optician model from the following document: {fielmann_text}",
+                        f"by the Optician model from the following document: {fielmann_text}",
                     },
-                ]
+                ],
             },
         ],
         tools=[openai.pydantic_function_tool(Optician)],
@@ -113,22 +120,35 @@ def run():
     # Print the structured output
     print(response.choices[0].message.tool_calls[0].function.arguments)
 
-    with open(os.path.join(GPT4o_EXPORT_DIR, f"{document_name}_{model['name']}.json"), "w") as json_file:
-        json.dump(json.loads(response.choices[0].message.tool_calls[0].function.arguments), json_file, indent=4)
+    with open(
+        os.path.join(GPT4o_EXPORT_DIR, f"{document_name}_{model['name']}.json"), "w"
+    ) as json_file:
+        json.dump(
+            json.loads(response.choices[0].message.tool_calls[0].function.arguments),
+            json_file,
+            indent=4,
+        )
 
     prompt_cost = model["input_cost"] * response.usage.prompt_tokens
     completion_cost = model["output_cost"] * response.usage.completion_tokens
 
-    with open(os.path.join(GPT4o_EXPORT_DIR, f"{document_name}_costs_{model['name']}.json"), "w") as cost_json:
-        json.dump({
-            "prompt_tokens": response.usage.prompt_tokens,
-            "completion_tokens": response.usage.completion_tokens,
-            "total_tokens": response.usage.total_tokens,
-            "prompt_cost_$": round(prompt_cost, 6),
-            "completion_cost_$": round(completion_cost, 6),
-            "total_cost_$": round(prompt_cost + completion_cost, 6),
-            "completion_time_s": round(time.time() - start_time, 2)
-        }, cost_json, indent=4)
+    with open(
+        os.path.join(GPT4o_EXPORT_DIR, f"{document_name}_costs_{model['name']}.json"),
+        "w",
+    ) as cost_json:
+        json.dump(
+            {
+                "prompt_tokens": response.usage.prompt_tokens,
+                "completion_tokens": response.usage.completion_tokens,
+                "total_tokens": response.usage.total_tokens,
+                "prompt_cost_$": round(prompt_cost, 6),
+                "completion_cost_$": round(completion_cost, 6),
+                "total_cost_$": round(prompt_cost + completion_cost, 6),
+                "completion_time_s": round(time.time() - start_time, 2),
+            },
+            cost_json,
+            indent=4,
+        )
 
 
 if __name__ == "__main__":
