@@ -1,68 +1,52 @@
 {
+    "name": "Fielmann AG",
+    "street": "Bahnhofstrasse 32",
+    "zip": 6300,
+    "city": "Zug",
     "customer": {
-        "title": "Herr",
         "first_name": "Hans",
         "last_name": "Muster",
-        "address": {
-            "street": "Anderstrasse 12",
-            "city": "Imdorf",
-            "zip_code": "1234"
-        },
-        "invoice": {
-            "number": "12558 14564"
-        }
+        "street": "Anderstrasse 12",
+        "zip": 1234,
+        "city": "Imdorf"
     },
-    "supplier": {
-        "name": "Fielmann AG",
-        "address": {
-            "street": "Bahnhofstrasse 32",
-            "city": "Zug",
-            "zip_code": "6300"
-        }
-    },
-    "order": {
-        "product": {
-            "name": "Fielmann MC 501 CL SL Durchmess 65, Kunststoff",
-            "price": {
-                "gross": "29.90 CHF",
-                "net": "27.75 CHF"
-            }
-        },
-        "quantity": [
+    "invoice": {
+        "date": "den 19.12.21 Ihr Auftrag 12558 14564 vom 12.12.2021",
+        "invoice_number": "12558 14564",
+        "positions": [
             {
-                "type": "Sph",
-                "amount": "+2.00 +2.00"
+                "text": "Fielmann MC 501 CL SL Durchmess 65, Kunststoff",
+                "price": 19.9
             },
             {
-                "type": "Cyl Achse 0.75 99 -0.75 85",
-                "amount": null
+                "text": "5.00 5.00",
+                "price": 29.9
             },
             {
-                "type": "Prisma",
-                "amount": null
+                "text": "+ 2.00 + 2.00",
+                "price": 29.9
             },
             {
-                "type": "Basis",
-                "amount": null
+                "text": "Sph",
+                "price": null
             },
             {
-                "type": "Add",
-                "amount": null
+                "text": "Cyl Achse 0.75 99 -0.75 85",
+                "price": null
+            },
+            {
+                "text": "Prisma",
+                "price": null
+            },
+            {
+                "text": "Basis",
+                "price": null
+            },
+            {
+                "text": "Add",
+                "price": null
             }
         ],
-        "total_price": {
-            "gross": "29.90 CHF",
-            "net": "27.75 CHF"
-        },
-        "tax_rate": "7.7%",
-        "vat_amount": "2.15 CHF"
-    },
-    "delivery_info": {
-        "date": "den 19.12.21",
-        "address": {
-            "city": "Zug"
-        }
-    },
-    "invoice_date": "vom 12.12.2021",
-    "NIF": "49585"
+        "total_price": 27.75
+    }
 }

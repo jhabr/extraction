@@ -1,10 +1,14 @@
 from crewai import Agent, Task, Crew
+from crewai_tools import LlamaIndexTool
 from langchain_ollama import ChatOllama
 import os
+
+from llama_index.core.tools import FunctionTool
 
 from constants import LOCAL_EXPORT_DIR
 from helpers.export_helper import ExportHelper
 from helpers.models import LLAMA3_1
+from schemas.optician import Invoice
 
 os.environ["OPENAI_API_KEY"] = "NA"
 
@@ -39,9 +43,13 @@ def run():
             NIF 49585
         """
 
-    output = {
-        "customer": {"first_name": "extracted_value", "last_name": "extracted_value"}
-    }
+    # def schema():
+    #     return Invoice.model_json_schema()
+    #
+    # og_tool = FunctionTool.from_defaults(
+    #     schema, name="<name>", description="<description>"
+    # )
+    # tool = LlamaIndexTool.from_tool(og_tool)
 
     general_agent = Agent(
         role="Information Extractor",
@@ -51,13 +59,37 @@ def run():
         allow_delegation=False,
         verbose=True,
         llm=llm,
+        # tools=[tool],
     )
+
+    schema = {
+        "name": str,
+        "street": str,
+        "zip": int,
+        "city": str,
+        "customer": {
+            "first_name": str,
+            "last_name": str,
+            "street": str,
+            "zip": int,
+            "city": str,
+        },
+        "invoice": {
+            "date": str,
+            "invoice_number": str,
+            "positions": [
+                {"text": str, "price": float},
+                ...,
+            ],
+            "total_price": float,
+        },
+    }
 
     task = Task(
         description=f"Extract the relevant information defined in the expected output as json from the following "
         f"text: {fielmann_text}",
         agent=general_agent,
-        expected_output=f"fThe extracted information in json format with the following structure: {output}",
+        expected_output=f"The extracted information in json format. Use the following structure: {schema}",
     )
 
     crew = Crew(agents=[general_agent], tasks=[task], verbose=True)
