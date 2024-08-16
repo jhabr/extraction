@@ -1,0 +1,82 @@
+{
+    "service_provider": {
+        "name": "Konsultation",
+        "street": "",
+        "zip": 1210,
+        "city": ""
+    },
+    "customer": {
+        "first_name": "001",
+        "last_name": "00.0020",
+        "street": "00.0010",
+        "zip": 1210,
+        "city": "1"
+    },
+    "invoice": {
+        "date": "25.02.2019",
+        "identification_number": "001",
+        "positions": [
+            {
+                "tariff_number": "Konsultation bei Personen über 6 Jahren und unter 75 Jahren, jede weiteren 5 Min.",
+                "text": "(Konsultationszuschlag)",
+                "amount": 10.42,
+                "price": 0.89
+            },
+            {
+                "tariff_number": "Konsultation bei Personen über 6 Jahren und unter 75 Jahren, jede weiteren 5 Min.",
+                "text": "(Konsultationszuschlag)",
+                "amount": 8.19,
+                "price": 0.89
+            },
+            {
+                "tariff_number": "Konsultation, letzte 5 MinaK.",
+                "text": "(Konsultationszuschlag)",
+                "amount": 4.10,
+                "price": 0.89
+            },
+            {
+                "tariff_number": "Konsultation",
+                "text": "",
+                "amount": 16.56,
+                "price": 1.00
+            },
+            {
+                "tariff_number": "Konsultation bei Personen über 6 Jahren und unter 75 Jahren, jede weiteren 5 Min.",
+                "text": "(Konsultationszuschlag)",
+                "amount": 10.42,
+                "price": 0.89
+            },
+            {
+                "tariff_number": "Konsultation bei Personen über 6 Jahren und unter 75 Jahren, jede weiteren 5 Min.",
+                "text": "(Konsultationszuschlag)",
+                "amount": 8.19,
+                "price": 0.89
+            },
+            {
+                "tariff_number": "Konsultation, letzte 5 MinaK.",
+                "text": "(Konsultationszuschlag)",
+                "amount": 4.10,
+                "price": 0.89
+            },
+            {
+                "tariff_number": "Sitzungspauschale für Elektro- und Thermotherapie/Instruktion bei Gerätevermietung",
+                "text": "",
+                "amount": 10.00,
+                "price": 1.00
+            },
+            {
+                "tariff_number": "Alanin-Aminotransferase (ALAT)",
+                "text": "",
+                "amount": 2.50,
+                "price": 1.00
+            },
+            {
+                "tariff_number": "HIV-1- und HIV-2-Antikörper und HIV-1-p24-Antigen, ql, Screening",
+                "text": "",
+                "amount": 20.00,
+                "price": 1.00
+            }
+        ],
+        "total_price": 1535.95
+    }
+}

@@ -28,6 +28,12 @@ class Llama3_1(Model):
     output_cost = 0.0
 
 
+class Gemma2(Model):
+    name = "gemma2:2b"
+    input_cost = 0.0
+    output_cost = 0.0
+
+
 class MoonDream(Model):
     name = "moondream"
     input_cost = 0.0

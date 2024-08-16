@@ -9,13 +9,13 @@ from llama_index.core.tools import FunctionTool
 
 from constants import LOCAL_EXPORT_DIR, PDF_DIR
 from helpers.export_helper import ExportHelper
-from helpers.models import Llama3_1, Model, MoonDream
-from schemas.optician import Invoice
+from helpers.models import Llama3_1, Model, MoonDream, Gemma2
+from local.schemas import fielmann_schema, tarmed_schema
 
 os.environ["OPENAI_API_KEY"] = "NA"
 
 
-def run(model: Model, document_name: str):
+def run(model: Model, document_name: str, schema: dict):
     llm = ChatOllama(
         model=model.name,
         temperature=0.0,
@@ -33,31 +33,6 @@ def run(model: Model, document_name: str):
     # )
     # tool = LlamaIndexTool.from_tool(og_tool)
 
-    schema = {
-        "service_provider": {
-            "name": str,
-            "street": str,
-            "zip": int,
-            "city": str,
-        },
-        "customer": {
-            "first_name": str,
-            "last_name": str,
-            "street": str,
-            "zip": int,
-            "city": str,
-        },
-        "invoice": {
-            "date": str,
-            "invoice_number": str,
-            "positions": [
-                {"text": str, "price": float},
-                ...,
-            ],
-            "total_price": float,
-        },
-    }
-
     extractor_agent = Agent(
         role="Information Extractor",
         goal="Extract relevant information from the supplied text into a json format.",
@@ -70,11 +45,11 @@ def run(model: Model, document_name: str):
     )
 
     extraction_task = Task(
-        description=f"Extract the relevant information defined in the expected output as json from the following "
+        description="Extract the relevant information defined in the expected output as json from the following "
         f"text: {fielmann_text}",
         agent=extractor_agent,
         expected_output=f"The extracted information with following structure: {schema}."
-        f"Make sure that each property has a valid value.",
+        "Make sure that each property has a valid value.",
     )
 
     reviewer_agent = Agent(
@@ -89,10 +64,11 @@ def run(model: Model, document_name: str):
     )
 
     review_task = Task(
-        description=f"Review the extracted information and make sure the format is correct.",
+        description="Review the extracted information and make sure the format is correct. If you do corrections, do "
+        "not annotate them in the output.",
         agent=reviewer_agent,
         expected_output=f"The extracted information with following structure: {schema}."
-        f"Make sure that each property has a valid value.",
+        "Make sure that each property has a valid value.",
     )
 
     crew = Crew(
@@ -107,11 +83,13 @@ def run(model: Model, document_name: str):
 
     ExportHelper().export_json_output(
         export_dir=LOCAL_EXPORT_DIR,
-        document_name="fielmann",
+        document_name=document_name,
         model=model,
         output=result.tasks_output[0].raw,
     )
 
 
 if __name__ == "__main__":
-    run(model=Llama3_1(), document_name="fielmann.pdf")
+    # run(model=Llama3_1(), document_name="fielmann.pdf", schema=fielmann_schema)
+    run(model=Llama3_1(), document_name="tarmed.pdf", schema=tarmed_schema)
+    # run(model=Gemma2(), document_name="fielmann.pdf")
