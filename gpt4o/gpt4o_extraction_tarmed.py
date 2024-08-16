@@ -6,40 +6,40 @@ import time
 import openai
 from dotenv import load_dotenv
 from openai import OpenAI
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 from gpt4o.constants import GPT4o_IMAGES_DIR, GPT4o_EXPORT_DIR
 
 
 class Customer(BaseModel):
-    first_name: str
-    last_name: str
-    street: str
-    zip: int
-    city: str
+    first_name: str = Field(description="the customer's first name")
+    last_name: str = Field(description="the customer's last name")
+    street: str = Field(description="the customer's last name")
+    zip: int = Field(description="the zip code of the city")
+    city: str = Field(description="the city name")
 
 
 class Position(BaseModel):
-    tariff_number: str
-    text: str
-    amount: int
-    price: float
+    tariff_number: str = Field(description="the tariff number column of the position in the invoice")
+    text: str = Field(description="the textual description of the position in the invoice")
+    amount: float = Field(description="the quantity of the position in the invoice")
+    price: float = Field(description="the price of the position in the invoice")
 
 
 class Invoice(BaseModel):
-    date: str
-    invoice_number: int
-    positions: list[Position]
-    total_price: float
+    date: str = Field(description="the date of the invoice")
+    invoice_number: int = Field(description="the identification number of the invoice")
+    positions: list[Position] = Field(description="all the positions with text and amount in the invoice")
+    total_price: float = Field(description="the total price of the invoice - sum of all listed positions")
 
 
 class Doctor(BaseModel):
-    name: str
-    street: str
-    zip: int
-    city: str
-    customer: Customer
-    invoice: Invoice
+    name: str = Field(description="the name of the biller")
+    street: str = Field(description="the street name of the biller")
+    zip: int = Field(description="the zip code of the biller")
+    city: str = Field(description="the city name of the biller")
+    customer: Customer = Field(description="the customer structure in the invoice")
+    invoice: Invoice = Field(description="the invoice structure")
 
 
 def run():
