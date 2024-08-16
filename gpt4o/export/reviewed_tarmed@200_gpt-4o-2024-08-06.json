@@ -1,6 +1,6 @@
 {
-    "name": "Frau Dr. med. Patricia \u00c4rztin",
-    "street": "Arztgasse 17b",
+    "name": "Frau Dr. med. Patrizia \u00c4rztin",
+    "street": "Arztgasse 17b5",
     "zip": 4000,
     "city": "Basel",
     "customer": {
@@ -29,13 +29,13 @@
             },
             {
                 "tariff_number": "00.0030",
-                "text": "Konsultation Personen \u00fcber 6 Jahren und unter 75 Jahren, jede weiteren 5 Min. (Konsultationszuschlag)",
+                "text": "Konsultation bei Personen \u00fcber 6 Jahren und unter 75 Jahren, jede weitere 5 Min. (Konsultationszuschlag)",
                 "amount": 1,
                 "price": 8.29
             },
             {
                 "tariff_number": "24.2660",
-                "text": "Arthroplastik Handgelenk mittels Revascularisation eines Karpalknochens",
+                "text": "Arthroplastik Handgelenk mittels Revaskularisation eines Karpalknochens",
                 "amount": 1,
                 "price": 1258.8
             },
@@ -53,7 +53,7 @@
             },
             {
                 "tariff_number": "00.0030",
-                "text": "Konsultation Personen \u00fcber 6 Jahren und unter 75 Jahren, jede weiteren 5 Min. (Konsultationszuschlag)",
+                "text": "Konsultation bei Personen \u00fcber 6 Jahren und unter 75 Jahren, jede weitere 5 Min. (Konsultationszuschlag)",
                 "amount": 1,
                 "price": 8.29
             },
@@ -64,44 +64,26 @@
                 "price": 16.56
             },
             {
-                "tariff_number": "00.0020",
+                "tariff_number": "00.0030",
+                "text": "Konsultation bei Personen \u00fcber 6 Jahren und unter 75 Jahren, jede weitere 5 Min. (Konsultationszuschlag)",
+                "amount": 1,
+                "price": 8.29
+            },
+            {
+                "tariff_number": "00.0010",
                 "text": "Konsultation, erste 5 Min. (Grundkonsultation)",
                 "amount": 1,
                 "price": 16.56
             },
             {
                 "tariff_number": "00.0030",
-                "text": "Konsultation Personen \u00fcber 6 Jahren und unter 75 Jahren, jede weiteren 5 Min. (Konsultationszuschlag)",
+                "text": "Konsultation bei Personen \u00fcber 6 Jahren und unter 75 Jahren, jede weitere 5 Min. (Konsultationszuschlag)",
                 "amount": 1,
                 "price": 8.29
-            },
-            {
-                "tariff_number": "00.0010",
-                "text": "Konsultation, letzte 5 Min(Konsultationszuschlag)",
-                "amount": 1,
-                "price": 16.56
-            },
-            {
-                "tariff_number": "00.0020",
-                "text": "Konsultation, erste 5 Min. (Grundkonsultation)",
-                "amount": 1,
-                "price": 16.56
-            },
-            {
-                "tariff_number": "00.0030",
-                "text": "Konsultation Personen \u00fcber 6 Jahren und unter 75 Jahren, jede weiteren 5 Min. (Konsultationszuschlag)",
-                "amount": 1,
-                "price": 8.29
-            },
-            {
-                "tariff_number": "00.0010",
-                "text": "Konsultation, letzte 5 Min(Konsultationszuschlag)",
-                "amount": 1,
-                "price": 16.56
             },
             {
                 "tariff_number": "7320",
-                "text": "Sitzungspauschale f\u00fcr Lito- und Thermotherapie/Instruktion bei Ger\u00e4tevermietung",
+                "text": "Sitzungspauschale f\u00fcr Lito- und Thermotherapie/Instruktion bei Ger\u00e4temiete",
                 "amount": 1,
                 "price": 2.5
             },
