@@ -5,6 +5,7 @@ from typing import Optional
 from openai.types.chat import ChatCompletion
 
 from gpt4o.constants import GPT4o_EXPORT_DIR
+from gpt4o.helpers.models import GPT4
 
 
 class ExportHelper:
@@ -12,7 +13,7 @@ class ExportHelper:
     def export_json_output(
         self,
         document_name: str,
-        model_name: str,
+        model: GPT4,
         output: str,
         prefix: Optional[str] = None,
     ) -> None:
@@ -20,9 +21,9 @@ class ExportHelper:
             os.path.join(
                 GPT4o_EXPORT_DIR,
                 (
-                    f"{prefix}_{document_name}_{model_name}.json"
+                    f"{prefix}_{document_name}_{model.name}.json"
                     if prefix
-                    else f"{document_name}_{model_name}.json"
+                    else f"{document_name}_{model.name}.json"
                 ),
             ),
             "w",
@@ -35,7 +36,7 @@ class ExportHelper:
 
     def export_cost(
         self,
-        model: dict,
+        model: GPT4,
         document_name: str,
         responses: [ChatCompletion],
         prefix: Optional[str] = None,
@@ -51,17 +52,17 @@ class ExportHelper:
             prompt_tokens += response.usage.prompt_tokens
             completion_tokens += response.usage.completion_tokens
             total_tokens += prompt_tokens + completion_tokens
-            prompt_cost += model["input_cost"] * response.usage.prompt_tokens
-            completion_cost += model["output_cost"] * response.usage.completion_tokens
+            prompt_cost += model.input_cost * response.usage.prompt_tokens
+            completion_cost += model.output_cost * response.usage.completion_tokens
             total_cost += prompt_cost + completion_cost
 
             with open(
                 os.path.join(
                     GPT4o_EXPORT_DIR,
                     (
-                        f"{prefix}_{document_name}_costs_{model['name']}.json"
+                        f"{prefix}_{document_name}_costs_{model.name}.json"
                         if prefix
-                        else f"{document_name}_costs_{model['name']}.json"
+                        else f"{document_name}_costs_{model.name}.json"
                     ),
                 ),
                 "w",
@@ -74,6 +75,7 @@ class ExportHelper:
                         "prompt_cost_$": round(prompt_cost, 6),
                         "completion_cost_$": round(completion_cost, 6),
                         "total_cost_$": round(prompt_cost + completion_cost, 6),
+                        "reviews": len(responses) - 1,
                     },
                     cost_json,
                     indent=4,

@@ -4,6 +4,8 @@ import time
 
 from dotenv import load_dotenv
 
+from gpt4o.helpers.models import GPT4o, GPT4
+
 load_dotenv()
 
 import openai
@@ -14,13 +16,12 @@ from gpt4o.helpers.export_helper import ExportHelper
 from gpt4o.schemas.schemas import Tarmed
 
 
-def run():
-    document_name = "tarmed@200"
-    model = {
-        "name": "gpt-4o-2024-08-06",
-        "input_cost": 2.50 / 10e6,
-        "output_cost": 10 / 10e6,
-    }
+def run(
+    document_name: str,
+    model: GPT4,
+    reviews: int = 1,
+):
+    responses = []
 
     with open(
         os.path.join(GPT4o_IMAGES_DIR, f"{document_name}.jpg"), "rb"
@@ -29,12 +30,12 @@ def run():
 
     start_time = time.time()
 
-    print(f"Extracting {document_name} using {model['name']}...")
+    print(f"Extracting {document_name} using {model.name}...")
 
     extraction_response = OpenAI(
         api_key=os.getenv("OPENAI_API_KEY")
     ).chat.completions.create(
-        model=model["name"],
+        model=model.name,
         messages=[
             {
                 "role": "system",
@@ -61,66 +62,85 @@ def run():
         temperature=0,
     )
 
-    extracted_data = (
+    responses.append(extraction_response)
+
+    review_data = (
         extraction_response.choices[0].message.tool_calls[0].function.arguments
     )
 
-    print(f"Reviewing {document_name} using {model['name']}...")
+    for index in range(reviews):
+        print(f"{index + 1}. Review of {document_name} using {model.name}...")
 
-    review_response = OpenAI(
-        api_key=os.getenv("OPENAI_API_KEY")
-    ).chat.completions.create(
-        model=model["name"],
-        messages=[
-            {
-                "role": "system",
-                "content": "You are an assistant that reviews structured information extracted from images. "
-                "Verify and correct the information.",
-            },
-            {
-                "role": "user",
-                "content": [
-                    {
-                        "type": "text",
-                        "text": (
-                            "Review the following information for accuracy and correctness and make sure that "
-                            f"the extracted data is a 100% correct: {extracted_data}"
-                            "If the extracted information is not correct, fix the information by extracting it "
-                            "from the supplied image. Use the provided Tarmed model tool for output structure."
-                        ),
-                    },
-                    {
-                        "type": "image_url",
-                        "image_url": {"url": f"data:image/jpg;base64,{image_data}"},
-                    },
-                ],
-            },
-        ],
-        tools=[openai.pydantic_function_tool(Tarmed)],
-        temperature=0,
-    )
+        review_response = OpenAI(
+            api_key=os.getenv("OPENAI_API_KEY")
+        ).chat.completions.create(
+            model=model.name,
+            messages=[
+                {
+                    "role": "system",
+                    "content": "You are an assistant that reviews structured information extracted from images. "
+                    "Verify and correct the information.",
+                },
+                {
+                    "role": "user",
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": (
+                                "Review the following information for accuracy and correctness and make sure that "
+                                "the extracted data is a 100% correct. If the extracted information is not correct, "
+                                "fix the information by extracting it from the supplied image."
+                                "Use the provided Tarmed model tool for output structure."
+                            ),
+                        },
+                        {
+                            "type": "text",
+                            "text": f"Here is the extracted data in json format: {review_data}",
+                        },
+                        {
+                            "type": "text",
+                            "text": "Here is the image data that needs to be analyzed.",
+                        },
+                        {
+                            "type": "image_url",
+                            "image_url": {"url": f"data:image/jpg;base64,{image_data}"},
+                        },
+                    ],
+                },
+            ],
+            tools=[openai.pydantic_function_tool(Tarmed)],
+            temperature=0,
+        )
+
+        responses.append(review_response)
+
+        review_data = (
+            review_response.choices[0].message.tool_calls[0].function.arguments
+        )
 
     print(f"OpenAI response time: {time.time() - start_time:.2f} seconds")
 
     export_helper = ExportHelper()
 
-    reviewed_data = review_response.choices[0].message.tool_calls[0].function.arguments
-
     export_helper.export_json_output(
         prefix="reviewed",
         document_name=document_name,
-        model_name=model["name"],
-        output=reviewed_data,
+        model=model,
+        output=review_data,
     )
     export_helper.export_cost(
         model=model,
         prefix="reviewed",
         document_name=document_name,
-        responses=[extraction_response, review_response],
+        responses=responses,
     )
 
-    print(reviewed_data)
+    print(review_data)
 
 
 if __name__ == "__main__":
-    run()
+    run(
+        document_name="tarmed@200",
+        model=GPT4o(),
+        reviews=2,
+    )
