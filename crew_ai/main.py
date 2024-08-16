@@ -5,11 +5,10 @@ from crewai import Crew, Task
 from dotenv import load_dotenv
 
 from constants import IMAGES_DIR
+from crew_ai.agents import ExtractorAgent, ReviewerAgent
+from crew_ai.tools import ExtractionTool, ReviewTool
 
 load_dotenv()
-
-from crewai.agents import ExtractorAgent, ReviewerAgent
-from crewai.tools import ExtractionTool, ReviewTool
 
 
 def run():

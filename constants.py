@@ -7,6 +7,7 @@ def parent_dir(directory) -> str:
 
 ROOT_DIR = os.path.abspath(os.path.join(parent_dir(__file__)))
 IMAGES_DIR = os.path.join(ROOT_DIR, "images")
+PDF_DIR = os.path.join(ROOT_DIR, "pdf")
 EXPORT_DIR = os.path.join(ROOT_DIR, "export")
 LOCAL_EXPORT_DIR = os.path.join(EXPORT_DIR, "local")
 GPT4o_EXPORT_DIR = os.path.join(EXPORT_DIR, "gpt4")

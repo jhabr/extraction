@@ -12,7 +12,7 @@ def search(search_query: str):
     return DuckDuckGoSearchRun().run(search_query)
 
 
-# Define crewai with specific roles and tools
+# Define crew_ai with specific roles and tools
 researcher = Agent(
     role="Senior Research Analyst",
     goal="Discover innovative AI technologies",
@@ -34,7 +34,7 @@ writer = Agent(
     verbose=True,
 )
 
-# Create tasks for the crewai
+# Create tasks for the crew_ai
 research_task = Task(
     description="Identify breakthrough AI technologies",
     agent=researcher,

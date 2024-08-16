@@ -17,30 +17,18 @@
         "invoice_number": "12558 14564",
         "positions": [
             {
-                "text": "Fielmann MC 501 CL SL Durchmess 65, Kunststoff",
+                "text": "Fielmann MC 501 CL SL",
                 "price": 19.9
             },
             {
-                "text": "Glas:",
+                "text": "Feme Rechts + 2.00 0.75 99",
                 "price": 5.0
             },
             {
-                "text": "Feme Rechts Feme Links",
+                "text": "Feme Links + 2.00 -0.75 85",
                 "price": 5.0
-            },
-            {
-                "text": "Prisma",
-                "price": 29.9
-            },
-            {
-                "text": "+ 2.00 + 2.00",
-                "price": 7.7
-            },
-            {
-                "text": "Cyl Achse 0.75 99 -0.75 85",
-                "price": 2.15
             }
         ],
-        "total_price": 27.75
+        "total_price": 29.9
     }
 }

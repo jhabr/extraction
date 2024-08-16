@@ -5,6 +5,7 @@ import time
 from dotenv import load_dotenv
 
 from helpers.models import GPT4o, Model
+from schemas.tarmed import Tarmed
 
 load_dotenv()
 
@@ -13,7 +14,6 @@ from openai import OpenAI
 
 from constants import IMAGES_DIR
 from helpers.export_helper import ExportHelper
-from schemas.schemas import Tarmed
 
 
 def run(
